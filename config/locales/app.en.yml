@@ -1,0 +1,116 @@
+---
+en:
+  hello: "Hello world"
+  show: 'Show'
+  edit: 'Edit'
+  back: 'Back'
+  update: "Update"
+  delete: 'Delete'
+  save: 'Save'
+  home_page: Home
+  application_name: ministerial_meetings
+  toggle_navigation: Toggle navigation
+  not_authorised: "Access denied. You're not authorised to do this"
+  not_authenticated: "Access denied. You must log in first"
+  login_or_sign_up: "Please log in or sign up"
+  site_access_rules: "To access this site you must be an authenticated user and only some users are allowed to sign up"
+  activerecord:
+    models:
+      program_information: 
+        one: program information
+        other: program information
+      brand:
+        one: brand
+        other: brands
+      series:
+        one: series
+        other: series
+      episode:
+        one: episode
+        other: episodes
+      title:
+        one: title
+        other: titles
+      subscription:
+        one: subscription
+        other: subscriptions
+      transaction:
+        one: transaction
+        other: transactions
+      free:
+        one: free
+        other: free items
+      mini_series:
+        one: mini series
+        other: mini series
+      purchasable_item:
+        one: purchasable item
+        other: purchasable items
+      product: 
+        one: product
+        other: products
+      content:
+        one: content
+        other: contents
+      offer:
+        one: offer
+        other: offers
+    attributes:
+      user: 
+        email: email
+        password: password
+        password_confirmation: password confirmation
+        name: name
+      program_information: &media
+        parent: parent
+        type: type
+        title: title
+        sort_name: sort name
+        short_synopsis: short synopsis
+        medium_synopsis: medium synopsis
+        long_synopsis: long synopsis
+      brand:
+        <<: *media
+      series:
+        <<: *media
+      episode:
+        <<: *media
+      title:
+        <<: *media
+      miniseries:
+        <<: *media
+      collection:
+        <<: *media
+      purchasable_item: &purchasableitem
+        name: name
+        original_offer_price: original offer price
+        product_id: product
+        content_id: content
+        offer_id: offer
+        discount_amount: discount amount
+        discount_percentage: discount percentage
+        price_promotion_name: price promotion name
+        offer_price: offer price
+        product_entitlement_state: product entitlement state
+        availability_start: start of availability
+        availability_end: end of availability
+        short_synopsis: short synopsis
+        currency: currency
+        list_price: list price
+        type: type
+        is_hd: is high definition
+      subscription:
+        <<: *purchasableitem
+      transaction:
+        <<: *purchasableitem
+      free:
+        <<: *purchasableitem
+      product: &product
+        name: name
+        external_id: external reference
+      content:
+        <<: *product
+      offer:
+        <<: *product
+
+      

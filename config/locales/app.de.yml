@@ -1,0 +1,201 @@
+---
+de:
+  hello: Hallo Welt
+  show: Show
+  edit: Bearbeiten
+  back: Zurück
+  update: Aktualisierung
+  delete: Löschen
+  save: Speichern
+  home_page: Zuhause
+  application_name: ministerial_meetings
+  toggle_navigation: Toggle-Navigation
+  not_authorised: Zugriff verweigert. Du bist nicht berechtigt, dies zu tun
+  not_authenticated: Zugriff verweigert. Sie müssen sich zuerst einloggen
+  login_or_sign_up: Bitte loggen Sie sich ein oder registrieren
+  site_access_rules: Auf diese Site zugreifen müssen ein authentifizierter Benutzer
+    und nur einige Benutzer können sich anzumelden
+  activerecord:
+    models:
+      program_information:
+        one: Programminformationen
+        other: Programminformationen
+      brand:
+        one: Marke
+        other: Marken
+      series:
+        one: Serie
+        other: Serie
+      episode:
+        one: Folge
+        other: Episoden
+      title:
+        one: Titel
+        other: Titel
+      subscription:
+        one: Abonnement
+        other: Abos
+      transaction:
+        one: Geschäft
+        other: Geschäfte
+      free:
+        one: kostenlos
+        other: kostenlose Produkte
+      mini_series:
+        one: Mini-Serie
+        other: Mini-Serie
+      purchasable_item:
+        one: käufliche Artikel
+        other: käufliche Artikel
+      product:
+        one: Produkt
+        other: Produkte
+      content:
+        one: Inhalt
+        other: Inhalt
+      offer:
+        one: Angebot
+        other: Angebote
+    attributes:
+      user:
+        email: E-Mail-
+        password: Passwort
+        password_confirmation: Passwortbestätigung
+        name: Name
+      program_information:
+        parent: Elternteil
+        type: Art
+        title: Titel
+        sort_name: Sortierung Name
+        short_synopsis: kurze Zusammenfassung
+        medium_synopsis: Medium Zusammenfassung
+        long_synopsis: lange Zusammenfassung
+      brand:
+        parent: Elternteil
+        type: Art
+        title: Titel
+        sort_name: Sortierung Name
+        short_synopsis: kurze Zusammenfassung
+        medium_synopsis: Medium Zusammenfassung
+        long_synopsis: lange Zusammenfassung
+      series:
+        parent: Elternteil
+        type: Art
+        title: Titel
+        sort_name: Sortierung Name
+        short_synopsis: kurze Zusammenfassung
+        medium_synopsis: Medium Zusammenfassung
+        long_synopsis: lange Zusammenfassung
+      episode:
+        parent: Elternteil
+        type: Art
+        title: Titel
+        sort_name: Sortierung Name
+        short_synopsis: kurze Zusammenfassung
+        medium_synopsis: Medium Zusammenfassung
+        long_synopsis: lange Zusammenfassung
+      title:
+        parent: Elternteil
+        type: Art
+        title: Titel
+        sort_name: Sortierung Name
+        short_synopsis: kurze Zusammenfassung
+        medium_synopsis: Medium Zusammenfassung
+        long_synopsis: lange Zusammenfassung
+      miniseries:
+        parent: Elternteil
+        type: Art
+        title: Titel
+        sort_name: Sortierung Name
+        short_synopsis: kurze Zusammenfassung
+        medium_synopsis: Medium Zusammenfassung
+        long_synopsis: lange Zusammenfassung
+      collection:
+        parent: Elternteil
+        type: Art
+        title: Titel
+        sort_name: Sortierung Name
+        short_synopsis: kurze Zusammenfassung
+        medium_synopsis: Medium Zusammenfassung
+        long_synopsis: lange Zusammenfassung
+      purchasable_item:
+        name: Name
+        original_offer_price: ursprünglichen Angebotspreis
+        product_id: Produkt
+        content_id: Inhalt
+        offer_id: Angebot
+        discount_amount: Rabattbetrag
+        discount_percentage: Rabattprozent
+        price_promotion_name: Preis Förderung Namen
+        offer_price: Angebotspreis
+        product_entitlement_state: Produktanspruch Zustand
+        availability_start: Beginn der Verfügbarkeit
+        availability_end: Ende der Verfügbarkeit
+        short_synopsis: kurze Zusammenfassung
+        currency: Währung
+        list_price: Listenpreis
+        type: Art
+        is_hd: ist High-Definition-
+      subscription:
+        name: Name
+        original_offer_price: ursprünglichen Angebotspreis
+        product_id: Produkt
+        content_id: Inhalt
+        offer_id: Angebot
+        discount_amount: Rabattbetrag
+        discount_percentage: Rabattprozent
+        price_promotion_name: Preis Förderung Namen
+        offer_price: Angebotspreis
+        product_entitlement_state: Produktanspruch Zustand
+        availability_start: Beginn der Verfügbarkeit
+        availability_end: Ende der Verfügbarkeit
+        short_synopsis: kurze Zusammenfassung
+        currency: Währung
+        list_price: Listenpreis
+        type: Art
+        is_hd: ist High-Definition-
+      transaction:
+        name: Name
+        original_offer_price: ursprünglichen Angebotspreis
+        product_id: Produkt
+        content_id: Inhalt
+        offer_id: Angebot
+        discount_amount: Rabattbetrag
+        discount_percentage: Rabattprozent
+        price_promotion_name: Preis Förderung Namen
+        offer_price: Angebotspreis
+        product_entitlement_state: Produktanspruch Zustand
+        availability_start: Beginn der Verfügbarkeit
+        availability_end: Ende der Verfügbarkeit
+        short_synopsis: kurze Zusammenfassung
+        currency: Währung
+        list_price: Listenpreis
+        type: Art
+        is_hd: ist High-Definition-
+      free:
+        name: Name
+        original_offer_price: ursprünglichen Angebotspreis
+        product_id: Produkt
+        content_id: Inhalt
+        offer_id: Angebot
+        discount_amount: Rabattbetrag
+        discount_percentage: Rabattprozent
+        price_promotion_name: Preis Förderung Namen
+        offer_price: Angebotspreis
+        product_entitlement_state: Produktanspruch Zustand
+        availability_start: Beginn der Verfügbarkeit
+        availability_end: Ende der Verfügbarkeit
+        short_synopsis: kurze Zusammenfassung
+        currency: Währung
+        list_price: Listenpreis
+        type: Art
+        is_hd: ist High-Definition-
+      product:
+        name: Name
+        external_id: externe Referenz
+      content:
+        name: Name
+        external_id: externe Referenz
+      offer:
+        name: Name
+        external_id: externe Referenz

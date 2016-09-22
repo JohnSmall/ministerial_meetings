@@ -1,0 +1,34 @@
+%nav{class: 'navbar navbar-fixed-top navbar-inverted', role:'navigation'}
+  .container-fluid
+    .navbar-header
+      %button{type:'button',class: 'navbar-toggle','data-toggle'=>'collapse','data-target'=>'navbar-collapse'}
+        %span.sr-only
+          = t('toggle_navigation')
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      =link_to t(:home_page),root_path,class: 'navbar-brand'
+    %div{class: "collapse navbar-collapse", id: "navbar-collapse"}
+      %ul{class: "navbar-nav nav"}
+        - (@root_genres || []).each do |root_genre|
+          %li.dropdown
+            =link_to '#',class: 'dropdown-toggle', 'data-toggle'=>'dropdown' do
+              = root_genre.name
+              %span.caret
+            %ul{class: 'dropdown-menu',role:'menu'}
+              - root_genre.children.each do |sub_genre|
+                %li
+                  =link_to sub_genre.name,genre_path(sub_genre)
+      -if user_signed_in?
+        %p{class: 'navbar-text navbar-right'}
+          = "#{t('devise.sessions.signed_in_as',name: current_user.name)} | "
+          = link_to t('devise.sessions.logout'),destroy_user_session_path, method: :delete, :class => 'navbar-link'
+      -else
+        // this trickery is to allow us to change the logged in state with the users name if they log in via ajax
+        %p{class: 'navbar-text navbar-right login-state'}
+          = link_to t('devise.registrations.sign_up'), new_user_registration_path, :class => 'navbar-link'
+          = link_to t("devise.sessions.new.login"), new_user_session_path, :class => 'navbar-link'
+        %p{class: 'navbar-text navbar-right login-state',style: 'display: none;'}
+          = raw("#{t('devise.sessions.signed_in_as',name: '')} <span id='user_name'></span>")
+      %div{class: 'navbar-text navbar-right flags'}
+        =build_flag_links
