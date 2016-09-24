@@ -15,187 +15,21 @@ fr:
   login_or_sign_up: Se il vous plaît connectez-vous ou inscrivez-vous
   site_access_rules: Pour accéder à ce site vous devez être un utilisateur authentifié,
     et seuls certains utilisateurs sont autorisés à se inscrire
-  activerecord:
-    models:
-      program_information:
-        one: informations sur le programme
-        other: informations sur le programme
-      brand:
-        one: marque
-        other: marques
-      series:
-        one: série
-        other: série
-      episode:
-        one: "épisode"
-        other: "épisodes"
-      title:
-        one: titre
-        other: titres
-      subscription:
-        one: abonnement
-        other: abonnements
-      transaction:
-        one: transaction
-        other: transactions
-      free:
-        one: gratuit
-        other: articles gratuits
-      mini_series:
-        one: mini-série
-        other: mini-série
-      purchasable_item:
-        one: article achetable
-        other: articles achetables
-      product:
-        one: produit
-        other: produits
-      content:
-        one: content
-        other: contenu
-      offer:
-        one: offre
-        other: offres
-    attributes:
-      user:
-        email: email
-        password: mot de passe
-        password_confirmation: confirmation de mot de passe
-        name: nom
-      program_information:
-        parent: mère
-        type: type
-        title: titre
-        sort_name: nom de tri
-        short_synopsis: court synopsis
-        medium_synopsis: Synopsis moyenne
-        long_synopsis: SYNOPSIS LONG
-      brand:
-        parent: mère
-        type: type
-        title: titre
-        sort_name: nom de tri
-        short_synopsis: court synopsis
-        medium_synopsis: Synopsis moyenne
-        long_synopsis: SYNOPSIS LONG
-      series:
-        parent: mère
-        type: type
-        title: titre
-        sort_name: nom de tri
-        short_synopsis: court synopsis
-        medium_synopsis: Synopsis moyenne
-        long_synopsis: SYNOPSIS LONG
-      episode:
-        parent: mère
-        type: type
-        title: titre
-        sort_name: nom de tri
-        short_synopsis: court synopsis
-        medium_synopsis: Synopsis moyenne
-        long_synopsis: SYNOPSIS LONG
-      title:
-        parent: mère
-        type: type
-        title: titre
-        sort_name: nom de tri
-        short_synopsis: court synopsis
-        medium_synopsis: Synopsis moyenne
-        long_synopsis: SYNOPSIS LONG
-      miniseries:
-        parent: mère
-        type: type
-        title: titre
-        sort_name: nom de tri
-        short_synopsis: court synopsis
-        medium_synopsis: Synopsis moyenne
-        long_synopsis: SYNOPSIS LONG
-      collection:
-        parent: mère
-        type: type
-        title: titre
-        sort_name: nom de tri
-        short_synopsis: court synopsis
-        medium_synopsis: Synopsis moyenne
-        long_synopsis: SYNOPSIS LONG
-      purchasable_item:
-        name: nom
-        original_offer_price: prix de l&#39;offre initiale
-        product_id: produit
-        content_id: content
-        offer_id: offre
-        discount_amount: Montant de la remise
-        discount_percentage: pourcentage de remise
-        price_promotion_name: Prix ​​Nom de promotion
-        offer_price: prix de l&#39;offre
-        product_entitlement_state: Etat de droit produit
-        availability_start: début de la disponibilité
-        availability_end: fin de disponibilité
-        short_synopsis: court synopsis
-        currency: monnaie
-        list_price: Prix ​​de liste
-        type: type
-        is_hd: est en haute définition
-      subscription:
-        name: nom
-        original_offer_price: prix de l&#39;offre initiale
-        product_id: produit
-        content_id: content
-        offer_id: offre
-        discount_amount: Montant de la remise
-        discount_percentage: pourcentage de remise
-        price_promotion_name: Prix ​​Nom de promotion
-        offer_price: prix de l&#39;offre
-        product_entitlement_state: Etat de droit produit
-        availability_start: début de la disponibilité
-        availability_end: fin de disponibilité
-        short_synopsis: court synopsis
-        currency: monnaie
-        list_price: Prix ​​de liste
-        type: type
-        is_hd: est en haute définition
-      transaction:
-        name: nom
-        original_offer_price: prix de l&#39;offre initiale
-        product_id: produit
-        content_id: content
-        offer_id: offre
-        discount_amount: Montant de la remise
-        discount_percentage: pourcentage de remise
-        price_promotion_name: Prix ​​Nom de promotion
-        offer_price: prix de l&#39;offre
-        product_entitlement_state: Etat de droit produit
-        availability_start: début de la disponibilité
-        availability_end: fin de disponibilité
-        short_synopsis: court synopsis
-        currency: monnaie
-        list_price: Prix ​​de liste
-        type: type
-        is_hd: est en haute définition
-      free:
-        name: nom
-        original_offer_price: prix de l&#39;offre initiale
-        product_id: produit
-        content_id: content
-        offer_id: offre
-        discount_amount: Montant de la remise
-        discount_percentage: pourcentage de remise
-        price_promotion_name: Prix ​​Nom de promotion
-        offer_price: prix de l&#39;offre
-        product_entitlement_state: Etat de droit produit
-        availability_start: début de la disponibilité
-        availability_end: fin de disponibilité
-        short_synopsis: court synopsis
-        currency: monnaie
-        list_price: Prix ​​de liste
-        type: type
-        is_hd: est en haute définition
-      product:
-        name: nom
-        external_id: référence externe
-      content:
-        name: nom
-        external_id: référence externe
-      offer:
-        name: nom
-        external_id: référence externe
+  countries:
+    :en: Royaume-Uni
+    :de: Allemagne
+    :it: Italie
+    :fr: France
+    :he: Israël
+    :pt: Brasil
+    :sv: Suède
+    :no: Norvège
+    :pl: Pologne
+    :bs: Bosnie-
+    :uk: Royaume-Uni
+    :br: Brésil
+    :ba: Bosnie-
+    :us: "États-Unis - Anglais"
+    :up: "États-Unis - Espagnol"
+    :ca: Canada - English
+    :cf: Canada - Français
