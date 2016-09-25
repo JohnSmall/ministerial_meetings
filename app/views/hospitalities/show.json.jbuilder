@@ -1,0 +1,1 @@
+json.partial! "hospitalities/hospitality", hospitality: @hospitality

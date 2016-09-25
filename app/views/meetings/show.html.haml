@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Day:
+  = @meeting.day
+%p
+  %b Month:
+  = @meeting.month
+%p
+  %b Year:
+  = @meeting.year
+%p
+  %b Purpose of meeting:
+  = @meeting.purpose_of_meeting
+
+= link_to 'Edit', edit_meeting_path(@meeting)
+\|
+= link_to 'Back', meetings_path

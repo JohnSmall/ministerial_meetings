@@ -1,0 +1,2 @@
+class Hospitality < ApplicationRecord
+end

@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Day:
+  = @hospitality.day
+%p
+  %b Month:
+  = @hospitality.month
+%p
+  %b Year:
+  = @hospitality.year
+%p
+  %b Type of hospitality:
+  = @hospitality.type_of_hospitality
+
+= link_to 'Edit', edit_hospitality_path(@hospitality)
+\|
+= link_to 'Back', hospitalities_path

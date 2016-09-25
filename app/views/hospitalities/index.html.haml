@@ -1,0 +1,27 @@
+%h1 Listing hospitalities
+
+%table
+  %thead
+    %tr
+      %th Day
+      %th Month
+      %th Year
+      %th Type of hospitality
+      %th
+      %th
+      %th
+
+  %tbody
+    - @hospitalities.each do |hospitality|
+      %tr
+        %td= hospitality.day
+        %td= hospitality.month
+        %td= hospitality.year
+        %td= hospitality.type_of_hospitality
+        %td= link_to 'Show', hospitality
+        %td= link_to 'Edit', edit_hospitality_path(hospitality)
+        %td= link_to 'Destroy', hospitality, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Hospitality', new_hospitality_path

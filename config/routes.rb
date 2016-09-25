@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :hospitalities
+  resources :meetings
   resources :organisations
   resources :people
   resources :roles

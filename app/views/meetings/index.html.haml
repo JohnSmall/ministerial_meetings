@@ -1,0 +1,27 @@
+%h1 Listing meetings
+
+%table
+  %thead
+    %tr
+      %th Day
+      %th Month
+      %th Year
+      %th Purpose of meeting
+      %th
+      %th
+      %th
+
+  %tbody
+    - @meetings.each do |meeting|
+      %tr
+        %td= meeting.day
+        %td= meeting.month
+        %td= meeting.year
+        %td= meeting.purpose_of_meeting
+        %td= link_to 'Show', meeting
+        %td= link_to 'Edit', edit_meeting_path(meeting)
+        %td= link_to 'Destroy', meeting, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Meeting', new_meeting_path

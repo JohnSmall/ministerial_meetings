@@ -1,0 +1,1 @@
+json.array! @hospitalities, partial: 'hospitalities/hospitality', as: :hospitality
