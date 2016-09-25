@@ -18,3 +18,5 @@
 *.swp
 /public/assets/
 /config/*.yml
+/spec/*.txt
+

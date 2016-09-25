@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @organisation.name
+%p
+  %b Wikipedia entry:
+  = @organisation.wikipedia_entry
+
+= link_to 'Edit', edit_organisation_path(@organisation)
+\|
+= link_to 'Back', organisations_path

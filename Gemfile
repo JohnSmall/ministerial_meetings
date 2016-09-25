@@ -60,6 +60,7 @@ gem 'factory_girl_rails'
 gem 'faraday'
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'activemodel-serializers-xml'
+gem 'jsonapi-resources'
 gem 'globalize', git: 'git@github.com:JohnSmall/globalize.git'
 group :development, :test do
   gem 'syntax'
@@ -79,6 +80,7 @@ group :test do
   gem 'selenium-webdriver'
   gem 'site_prism'
   gem 'poltergeist'
+  gem 'rails-controller-testing'
 end
 
 group :development do

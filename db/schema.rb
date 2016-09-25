@@ -10,15 +10,42 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160924125755) do
+ActiveRecord::Schema.define(version: 20160925132927) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "organisations", force: :cascade do |t|
+    t.string   "name"
+    t.string   "wikipedia_entry"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "organisations_people", id: false, force: :cascade do |t|
+    t.integer "organisation_id", null: false
+    t.integer "person_id",       null: false
+  end
+
+  create_table "people", force: :cascade do |t|
+    t.string   "name"
+    t.string   "wikipedia_entry"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "people_roles", id: false, force: :cascade do |t|
+    t.integer "person_id", null: false
+    t.integer "role_id",   null: false
+    t.index ["person_id", "role_id"], name: "index_people_roles_on_person_id_and_role_id", using: :btree
+    t.index ["role_id", "person_id"], name: "index_people_roles_on_role_id_and_person_id", using: :btree
+  end
+
   create_table "roles", force: :cascade do |t|
     t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "wikipedia_entry"
   end
 
 end
