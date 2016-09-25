@@ -58,6 +58,7 @@ gem 'draper', github: 'drapergem/draper'
 gem 'kaminari'
 gem 'factory_girl_rails'
 gem 'faraday'
+gem 'active_model_serializers', '~> 0.10.0'
 gem 'activemodel-serializers-xml'
 gem 'globalize', git: 'git@github.com:JohnSmall/globalize.git'
 group :development, :test do
