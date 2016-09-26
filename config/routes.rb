@@ -12,6 +12,7 @@ Rails.application.routes.draw do
       resources :roles
       jsonapi_resources :people
       jsonapi_resources :organisations
+      jsonapi_resources :meetings
     end
   end
 end
